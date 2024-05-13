@@ -1,6 +1,4 @@
 # TO DO
-1. write contents
-- Resume section = link to a downloadable resume and a list of the developer’s proficiencies
 2. portfolio functions
 - Portfolio props
 3. contact section 
