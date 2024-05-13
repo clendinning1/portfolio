@@ -1,16 +1,10 @@
-// import project1Img from '';
-
-function Project() {
+function Project(props) {
     return (
         <div>
-            {/* USE PROPS */}
-            {/* image of deployed app */}
-            {/* <img src={project1Img} alt="Alt Text:"></img> */}
-            {/* title of the project */}
-            <h2></h2>
-            {/* link to deployed app & GH repo */}
-            <a href="">App Link</a>
-            <a href="">GH Repo</a>
+            <h2>{props.title}</h2>
+            {/* <img src={props.imgsrc} alt="Alt Text: website preview"></img> */}
+            <a href={`${props.applink}`}>App Link</a>
+            <a href={`https://github.com/clendinning1/${props.gh}`}>GH Repo</a>
         </div>
     );
 }

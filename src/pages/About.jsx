@@ -4,7 +4,7 @@ export default function About() {
     return (
         <div>
             <img src={cat} alt="Alt Text: photo of my cat" />
-            <p>junior fullstack dev.</p>
+            <p>junior fullstack MERN dev.</p>
         </div>
     );
 }
