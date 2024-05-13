@@ -6,6 +6,10 @@ export default function Portfolio() {
             <p>portfolio</p>
             <Project />
             <Project />
+            <Project />
+            <Project />
+            <Project />
+            <Project />
         </div>
     );
 }
