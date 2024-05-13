@@ -1,7 +1,10 @@
+import cat from '../images/catpic.jpg';
+
 export default function About() {
     return (
         <div>
-            <p>about</p>
+            <img src={cat} alt="Alt Text: photo of my cat" />
+            <p>junior fullstack dev.</p>
         </div>
     );
 }
