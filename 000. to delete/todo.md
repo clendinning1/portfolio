@@ -1,4 +1,6 @@
 # TO DO
+??. move images to public???
+
 3. contact section 
 - Contact section = a contact form with fields for a name, an email address, and a message
 - WHEN I move my cursor out of one of the form fields without entering text THEN I receive a notification that this field is required
