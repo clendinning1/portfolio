@@ -1,7 +1,13 @@
 function Project() {
     return (
         <div>
-            <p>project</p>
+            {/* image of deployed app */}
+            <img src="" alt=""></img>
+            {/* title of the project */}
+            <h2></h2>
+            {/* link to deployed app & GH repo */}
+            <a href="">App Link</a>
+            <a href="">GH Repo</a>
         </div>
     );
 }
