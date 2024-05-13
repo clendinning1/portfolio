@@ -1,6 +1,5 @@
 # TO DO
 1. write contents
-- About Me section = a recent photo or avatar of the developer and a short bio about them
 - Resume section = link to a downloadable resume and a list of the developer’s proficiencies
 2. portfolio functions
 - Portfolio props
