@@ -8,6 +8,7 @@ import p4Img from '../images/employee.png';
 import p5Img from '../images/logogen.png';
 import p6Img from '../images/calendar.png';
 
+
 // constructor for individual projects
 function Proj(title, link, sw, gh) {
     this.title = title;
@@ -16,7 +17,7 @@ function Proj(title, link, sw, gh) {
     this.gh = gh;
 }
 
-// projects
+// individual project info
 const p1 = new Proj('JATE', 'https://text-editor-wvtd.onrender.com/', 'site', 'text-editor');
 const p2 = new Proj('Social Media w/ MongoDB', 'https://drive.google.com/file/d/14uPt5qMzUf8RBnV7rrZ0WklNgXzDkh8D/view', 'walkthrough', 'social-mongo');
 const p3 = new Proj('Commerce Database', 'https://drive.google.com/file/d/1JL0MVo8XVlfZU3c0MJarnnbH3swIyZOB/view', 'walkthrough', 'commerce-database');
