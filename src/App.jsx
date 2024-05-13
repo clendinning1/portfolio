@@ -1,15 +1,16 @@
 import { Outlet } from 'react-router-dom';
-import Nav from './components/Navigation';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
     return (
         <>
-            <Nav />
-            {/* nav will be in header later, just putting it here for now for testing */}
+            <Header />
             <main className="mx-3">
                 {/* outlet component allows for routing */}
                 <Outlet />
             </main>
+            <Footer />
         </>
     );
 }
