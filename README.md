@@ -15,5 +15,5 @@ clendinning1's portfolio.
 
 ### Sources
 - [React Docs](https://legacy.reactjs.org/docs/getting-started.html)
-= [Netlify Docs](https://docs.netlify.com/cli/get-started/)
+- [Netlify Docs](https://docs.netlify.com/cli/get-started/)
 - https://stackoverflow.com/questions/50694881/how-to-download-file-in-react-js#50695012
