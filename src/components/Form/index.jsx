@@ -13,15 +13,8 @@ function Form() {
         const { name, value } = e.target;
 
         // check which input field is being typed in and call the relevant function
-        if (name === 'clientName') {
-            return setClientName(value);
-        } else if (name === 'email') {
-            return setEmail(value);
-        } else if (name === 'message') {
-            return setMessage(value);
-        } else {
-            return console.log("oops");
-        }
+        return name === 'clientName' ? setClientName(value)
+            : name === 'email' ? setEmail(value) : setMessage(value);
 
     };
 
