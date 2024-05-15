@@ -22,6 +22,22 @@ function Form() {
         // prevent page refresh
         e.preventDefault();
 
+        const submittedEmail = "email.com";
+
+        // email validating funct
+        function validateEmail(emailToValidate) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(emailToValidate);
+        }
+
+        if (validateEmail(submittedEmail) === true) {
+            console.log("true");
+        } else if (validateEmail(submittedEmail) === false){
+            console.log("false");
+        } else {
+            console.log("oops?");
+        }
+
         // notify user on succesful submit
         alert(`Thanks ${clientName}, your message was sent.`);
         // clear inputs
