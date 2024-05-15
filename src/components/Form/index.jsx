@@ -12,31 +12,29 @@ function Form() {
         // value = contents entered into form
         const { name, value } = e.target;
 
-        // check which input field is being typed in and call the relevant function
-        return name === 'clientName' ? setClientName(value)
-            : name === 'email' ? setEmail(value) : setMessage(value);
-
-    };
-
-    const onSubmit = (e) => {
-        // prevent page refresh
-        e.preventDefault();
-
-        const submittedEmail = "email.com";
-
         // email validating funct
         function validateEmail(emailToValidate) {
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             return emailRegex.test(emailToValidate);
         }
 
-        if (validateEmail(submittedEmail) === true) {
-            console.log("true");
-        } else if (validateEmail(submittedEmail) === false){
-            console.log("false");
-        } else {
-            console.log("oops?");
+        function testFunct() {
+            if (validateEmail(value) === true) {
+                console.log("true");
+            } else if (validateEmail(value) === false) {
+                console.log("false");
+            }
         }
+
+        // check which input field is being typed in and call the relevant function
+        return name === 'clientName' ? setClientName(value)
+            : name === 'email' ? (setEmail(value), testFunct()) : setMessage(value);
+
+    };
+
+    const onSubmit = (e) => {
+        // prevent page refresh
+        e.preventDefault();
 
         // notify user on succesful submit
         alert(`Thanks ${clientName}, your message was sent.`);
