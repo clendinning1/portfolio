@@ -7,6 +7,7 @@ function Form() {
     const [clientName, setClientName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const [emailMessage, setEmailMessage] = useState('');
 
     const onChange = (e) => {
         // name = name of input (see input "name="s below)
