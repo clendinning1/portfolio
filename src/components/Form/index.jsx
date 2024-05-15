@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { validateEmail } from '../utils/helpers';
 import './style.css';
 
 function Form() {
@@ -12,13 +13,9 @@ function Form() {
         // value = contents entered into form
         const { name, value } = e.target;
 
-        // email validating funct
-        function validateEmail(emailToValidate) {
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            return emailRegex.test(emailToValidate);
-        }
-
-        function testFunct() {
+        // this will be with every letter typed, but we want it to be
+        // every time you exit the field
+        function checkEmail() {
             if (validateEmail(value) === true) {
                 console.log("true");
             } else if (validateEmail(value) === false) {
@@ -28,7 +25,7 @@ function Form() {
 
         // check which input field is being typed in and call the relevant function
         return name === 'clientName' ? setClientName(value)
-            : name === 'email' ? (setEmail(value), testFunct()) : setMessage(value);
+            : name === 'email' ? (setEmail(value), checkEmail()) : setMessage(value);
 
     };
 
